@@ -9,8 +9,8 @@ input[type="checkbox"]{
 }
 
 .OrderTableSection{
-    width: 80%;
-    margin-left: 50px;
+    width: 85%;
+    margin-left: 90px;
 }
 
 table{
@@ -19,12 +19,7 @@ table{
     text-indent: initial;
     border: 2px solid #F6F7FB;
 }
-td,th{
-    padding: 15px 40px;
-    width: 20%;
-    font-size: 14px;
-    text-align: left;
-}
+
 
 tbody tr{
     background-color: #fff;

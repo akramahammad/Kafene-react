@@ -1,0 +1,13 @@
+.OrderDetails{
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+.OrderDetails>p>span:first-child{
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.OrderDetails>p>span:last-child{
+    color: rgb(140, 140, 140);
+}

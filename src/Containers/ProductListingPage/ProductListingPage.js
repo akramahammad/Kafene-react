@@ -4,6 +4,7 @@ import classes from './ProductListingPage.module.css'
 import ProductRow from '../../Components/ProductRow/ProductRow'
 
 class ProductListingPage extends React.Component{
+
     state={
         products:[],
         activeProducts:[],
@@ -89,7 +90,7 @@ class ProductListingPage extends React.Component{
                     <tbody>
                         {
                             this.state.activeProducts.map(product =>{
-                                return <ProductRow details={product}/>
+                                return <ProductRow details={product} {...this.props}/>
                             })
                         }
                     </tbody>

@@ -1,0 +1,13 @@
+.ProductDetails{
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+.ProductDetails>p>span:first-child{
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.ProductDetails>p>span:last-child{
+    color: rgb(140, 140, 140);
+}

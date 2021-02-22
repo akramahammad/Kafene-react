@@ -3,7 +3,7 @@ import axios from 'axios'
 import classes from './OrderListingPage.module.css'
 import OrderRow from '../../Components/OrderRow/OrderRow'
 
-const OrderListingPage =()=>{
+const OrderListingPage =(props)=>{
     let [count,setCount]=React.useState(100)
     const [orders,setOrders]=React.useState([])
     const [activeOrders,setActive]=React.useState([])
@@ -66,7 +66,7 @@ const OrderListingPage =()=>{
                         <tbody>
                             {
                                 activeOrders.map(order =>{
-                                    return <OrderRow details={order}/>
+                                    return <OrderRow key={order.id} details={order} {...props}/>
                                 })
 
                             }

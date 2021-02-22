@@ -20,7 +20,7 @@ const Header =(props)=>{
             <MenuItem label="Users" link="/users" active={props.location.pathname=="/users"?true:false}/>
         </nav>
     </div>
-        <Link to="/" id="Logoutbtn" onClick={props.handleLogout}>Logout</Link>
+        {props.loggedIn?<Link to="/" id="Logoutbtn" onClick={props.handleLogout}>Logout</Link>:null}
     </header>
 
     )

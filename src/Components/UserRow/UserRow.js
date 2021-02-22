@@ -4,12 +4,12 @@ import classes from './UserRow.module.css'
 const UserRow =(props)=>{
     return(
             <tr>
-                <td>{props.details.id}</td>
+                <td className={classes.Grey}>{props.details.id}</td>
                 <td><img src={props.details.profilePic} /></td>
-                <td>{props.details.fullName}</td> 
+                <td className={classes.Grey}>{props.details.fullName}</td> 
                 <td>{props.details.dob}</td>
-                <td>{props.details.gender}</td>
-                <td>{`${props.details.currentCity}, ${props.details.currentCountry}`}</td> 
+                <td className={classes.Grey}>{props.details.gender}</td>
+                <td className={classes.Grey}>{`${props.details.currentCity}, ${props.details.currentCountry}`}</td> 
             </tr>
     )
 }
