@@ -18,7 +18,7 @@ const LoginPage =({handleLoggedInStatus})=>{
         <main>
             <form className={classes.Loginform} onSubmit={handleLogin}>
                 <h1>Sign In</h1>
-                <input type="text" name="Username" className={classes.Username} required placeholder="Enter Username" onInput={(e)=>{setUserName(e.target.value)}}/>
+                <input type="text" name="Username" className={classes.Username} required placeholder="Enter Username  (Username and password must be same)" onInput={(e)=>{setUserName(e.target.value)}}/>
                 <input type="password" name="Password" className ={classes.Password} required placeholder="Enter Password" onInput={(e)=>{setPassword(e.target.value)}}/>
                 <input type="submit" className={classes.Submitbtn} value="Login" />
             </form>
